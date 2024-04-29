@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <GridLayout
+        android:id="@+id/grid_other_ammenities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        >
+        <ImageView
+            android:id="@+id/image_for_otherfacilities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/carrom"/>
+        <TextView
+            android:id="@+id/games_name_text_adapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:layout_toRightOf="@+id/image_for_otherfacilities"
+            android:text="Yoga Meditation Area"
+            android:fontFamily="@font/iter_medium"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_40ssp"/>
+    </GridLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grid_other_ammenities"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/line_ammenities"/>
+    </RelativeLayout>
+</RelativeLayout>
+</LinearLayout>

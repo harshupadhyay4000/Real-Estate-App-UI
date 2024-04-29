@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Pages.Reviews.Ammenities">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/back_btn_ammenities_ammenities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:src="@drawable/back_btn"
+            android:background="@drawable/button_background"/>
+
+        <TextView
+            android:id="@+id/ammenities_heading_ammenities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/iter_bold"
+            android:textSize="@dimen/_15ssp"
+            android:layout_toRightOf="@+id/back_btn_ammenities_ammenities"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Ammenities"/>
+        <TextView
+            android:id="@+id/topfacilities_heading_ammenities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/back_btn_ammenities_ammenities"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/iter_medium"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15ssp"
+            android:text="Top Facilities"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_ammenities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topfacilities_heading_ammenities"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/other_facilities_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycle_ammenities"
+            android:textColor="@color/black"
+            android:fontFamily="@font/iter_bold"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Other Facilities" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_other_facilities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/other_facilities_heading"
+
+            />
+
+        <ImageButton
+            android:id="@+id/intrested_btn_ammenities"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycle_other_facilities"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/intrested_btn"/>
+
+
+
+
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

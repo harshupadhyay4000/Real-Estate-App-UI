@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Pages.Reviews.AboutTheBuilderActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/back_btn_abt_builder_act"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:src="@drawable/back_btn"
+            android:background="@drawable/button_background"/>
+        <TextView
+            android:id="@+id/abt_builder_heading_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:fontFamily="@font/iter_bold"
+            android:text="About Builder"
+            android:layout_toRightOf="@+id/back_btn_abt_builder_act"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_20ssp"/>
+
+        <TextView
+            android:id="@+id/company_heading_abt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkgreen"
+            android:text="GANESH HOUSING CORPORATION LIMITED"
+            android:textSize="@dimen/_12ssp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/abt_builder_heading_activity"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/iter_bold"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_140sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/company_heading_abt"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="@dimen/_20sdp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/black_border">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/iter_medium"
+                    android:textSize="@dimen/_10ssp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Lorem ipsum dolor sit amet consectetur. Aliquam \ndiam pellentesque est tempus neque odio nunc \nbibendum. Ut sit quam natoque volutpat aenean \negestas. Venenatis odio scelerisque porttitor \npellentesque dui nisl. Velit odio congue ac augue \nquis nisi risus."
+                    />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

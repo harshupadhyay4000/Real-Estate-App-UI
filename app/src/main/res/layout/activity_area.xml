@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pages.Reviews.AreaActivity"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/back_btn_aboutarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn"
+            android:background="@drawable/button_background"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"/>
+
+        <TextView
+            android:id="@+id/about_gota_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/back_btn_aboutarea"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/darkgreen"
+            android:fontFamily="@font/iter_medium"
+            android:textSize="@dimen/_15ssp"
+            android:text="About Gota,Ahmedabad"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_area_act"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_gota_heading"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+        <ImageView
+            android:id="@+id/rating_icon_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rating_area"
+            android:layout_below="@+id/recycle_area_act"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1206 Resident's Review"
+            android:textColor="@color/black"
+            android:fontFamily="@font/iter_medium"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/rating_icon_area"
+            android:layout_below="@+id/recycle_area_act"
+            />
+        <TextView
+            android:id="@+id/pricerange_heading_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/iter_bold"
+            android:textSize="@dimen/_12ssp"
+            android:layout_below="@+id/rating_icon_area"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Price Ranges"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_avg_propertyprices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pricerange_heading_area"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_whatsgreat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycle_avg_propertyprices"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+
+
+
+
+
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

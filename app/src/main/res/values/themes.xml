@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CREDAI" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">#85FFBB</item>
+    </style>
+
+    <style name="Theme.CREDAI" parent="Base.Theme.CREDAI" />
+</resources>

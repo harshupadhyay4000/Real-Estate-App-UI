@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:background="@color/transparentlightgreen"/>
+                <ImageButton
+                    android:id="@+id/sidebar_main"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/sidebar_btn"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"/>
+                <ImageButton
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/login_btn"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:layout_marginRight="@dimen/_15sdp"/>
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/slider"
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/sidebar_main"
+                    app:iss_auto_cycle="true"
+                    app:iss_period="1000"
+                    app:iss_delay="1000"
+                    app:iss_text_align="CENTER"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slider"
+            android:layout_marginEnd="@dimen/_30ssp"
+            app:hintEnabled="false"
+            android:focusable="true"
+            app:cursorColor="@color/black"
+            android:clickable="true"
+            android:id="@+id/home_search"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10ssp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/_5ssp"
+                android:background="@drawable/search_bar"
+                android:hint="Search by City, Locality, Project"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                android:focusable="true"
+                android:textCursorDrawable="@null"
+                android:cursorVisible="true"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:textColorHint="#9AA0B4"
+                android:fontFamily="@font/iter_medium"
+                android:drawableEnd="@drawable/search_icon"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/trending_heading_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trending In Ahmedabad"
+                    android:layout_below="@+id/home_search"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/iter_bold"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    />
+                <ImageButton
+                    android:id="@+id/viewall_one_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/view_all"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/home_search"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_one_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trending_heading_main"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    />
+                <TextView
+                    android:id="@+id/popular_heading_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recycle_one_main"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Popular Localities in Ahmedabad"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/iter_bold"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_12ssp"
+                    />
+                <ImageButton
+                    android:id="@+id/viewall_two_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/view_all"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/recycle_one_main"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_two_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/popular_heading_main"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+                <TextView
+                    android:id="@+id/recommeded_text_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recommended Properties"
+                    android:layout_below="@+id/recycle_two_main"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/iter_bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    />
+                <ImageButton
+                    android:id="@+id/viewall_three_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/view_all"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/recycle_two_main"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_three_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recommeded_text_main"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    />
+
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

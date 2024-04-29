@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+<androidx.cardview.widget.CardView
+    android:layout_width="@dimen/_280sdp"
+    android:layout_height="@dimen/_170sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_7sdp"
+    android:backgroundTint="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/green_border">
+        <ImageView
+            android:id="@+id/image_recomended"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/flat_img"
+            android:scaleType="fitXY"
+            android:layout_alignParentStart="true"
+            />
+        <TextView
+            android:id="@+id/name_recomended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/image_recomended"
+            android:text="New Pine \nResidency Appartme.."
+            android:textColor="@color/darkgreen"
+            android:fontFamily="@font/iter_bold"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            />
+        <TextView
+            android:id="@+id/possesion_text_recomended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_recomended"
+            android:layout_toEndOf="@+id/image_recomended"
+            android:text="Possesion from Jun 2024"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/iter_medium"
+            android:textSize="@dimen/_10ssp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            />
+        <ImageView
+            android:id="@+id/rera_icon_recomended"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/rera"
+            android:layout_below="@+id/possesion_text_recomended"
+            android:layout_toEndOf="@+id/image_recomended"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+        <ImageView
+            android:id="@+id/location_icon_recomended"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_below="@+id/rera_icon_recomended"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_toEndOf="@+id/image_recomended"
+            android:src="@drawable/location_icon" />
+        <TextView
+            android:id="@+id/description_text_recomended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2BHK, Bopal, Ahmedabad"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/iter_medium"
+            android:textSize="@dimen/_10ssp"
+            android:layout_toEndOf="@+id/location_icon_recomended"
+            android:layout_below="@+id/rera_icon_recomended"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_2sdp"/>
+        <ImageView
+            android:id="@+id/rupee_icon_recomended"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:src="@drawable/rupee"
+            android:layout_toEndOf="@+id/image_recomended"
+            android:layout_below="@+id/location_icon_recomended"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+        <TextView
+            android:id="@+id/price_text_recomended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="88.69 Lac - 2.28 Crore"
+            android:textColor="@color/black"
+            android:fontFamily="@font/iter_bold"
+            android:textSize="@dimen/_10ssp"
+            android:layout_toEndOf="@+id/rupee_icon_recomended"
+            android:layout_below="@+id/description_text_recomended"
+            android:layout_marginLeft="@dimen/_2sdp"/>
+
+        <ImageButton
+            android:id="@+id/brochure_btn_recomended"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/brochure_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/price_text_recomended"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_3sdp"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>

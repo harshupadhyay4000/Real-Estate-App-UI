@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pages.DetailsActivity"
+    android:background="@color/white">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@id/rlSubmit"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/appt_img_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/appt_img"/>
+            <ImageButton
+                android:id="@+id/back_btn_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_btn"
+                android:background="@drawable/button_background"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"/>
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_20sdp">
+
+                <ImageButton
+                    android:id="@+id/share_btn_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/share_btn"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    />
+                <ImageButton
+                    android:id="@+id/like_btn_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/like_btn"
+                    />
+            </GridLayout>
+
+            <ImageButton
+                android:id="@+id/floor_plan_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_floor_plan"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_280sdp"
+                android:layout_marginRight="@dimen/_10sdp"/>
+            <TextView
+                android:id="@+id/appt_text_details_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Woodland Appartment"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17ssp"
+                android:layout_below="@+id/appt_img_details"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:fontFamily="@font/iter_bold"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/appt_mark"
+                android:layout_toRightOf="@+id/appt_text_details_page"
+                android:layout_below="@+id/appt_img_details"
+                android:layout_marginLeft="@dimen/_5sdp"/>
+
+            <TextView
+                android:id="@+id/appt_description_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Woodland Appartment, Gota, Ahmedabad"
+                android:layout_below="@+id/appt_text_details_page"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:fontFamily="@font/iter_medium"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/grey"/>
+            <RelativeLayout
+                android:id="@+id/relativedetails"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/appt_description_details"
+                android:background="@color/white"
+
+                android:layout_marginVertical="@dimen/_3ssp"
+                android:layout_height="wrap_content">
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayoutdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15ssp"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed"
+                    android:layout_marginHorizontal="@dimen/_10ssp"
+                    app:tabIndicatorColor="@color/darkgreen"
+                    android:background="@drawable/tab"
+                    android:backgroundTint="@color/white"
+                    android:layout_centerInParent="true"
+                    app:tabSelectedTextColor="@color/darkgreen"
+                    app:tabTextColor="@color/black"/>
+            </RelativeLayout>
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativedetails"
+                android:layout_marginTop="0dp"/>
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+  <RelativeLayout
+      android:id="@+id/rlSubmit"
+      android:layout_width="match_parent"
+      android:layout_alignParentBottom="true"
+      android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/intrested_btn"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/intrested_btn" />
+  </RelativeLayout>
+
+
+</RelativeLayout>

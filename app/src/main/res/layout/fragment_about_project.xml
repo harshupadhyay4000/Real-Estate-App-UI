@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".Pages.Fragments.AboutProject">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_one_abt_project"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_250sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="@dimen/_10sdp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border">
+                <TextView
+                    android:id="@+id/paragraph_one_abt_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/iter_medium"
+                    android:text="Lorem ipsum dolor sit amet consectetur. \nFaucibus dolor ultricies eu enim. Tellus posuere \ndolor elementum cras arcu faucibus aliquet \nbibendum. Id at nisl eget sem et ultricies sit urna. \nVelit consectetur duis dui consectetur nibh \nlectus elit."
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/paragraph_two_abt_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_below="@+id/paragraph_one_abt_project"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/iter_medium"
+                    android:text="Lorem ipsum dolor sit amet consectetur. \nFaucibus dolor ultricies eu enim. Tellus posuere \ndolor elementum cras arcu faucibus aliquet \nbibendum. Id at nisl eget sem et ultricies sit urna. \nVelit consectetur duis dui consectetur nibh \nlectus elit."
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/paragraph_three_abt_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_below="@+id/paragraph_two_abt_project"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/iter_medium"
+                    android:text="Lorem ipsum dolor sit amet consectetur. \nFaucibus dolor ultricies eu enim. Tellus posuere \ndolor elementum cras arcu faucibus aliquet \nbibendum."
+                    android:layout_centerHorizontal="true"
+                    />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_two_abt_proj"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_below="@+id/card_one_abt_project"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="@dimen/_7sdp"
+
+
+            android:layout_marginTop="@dimen/_20sdp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border">
+                <TextView
+                    android:id="@+id/pricelist_heading_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:background="@color/white"
+                    android:textColor="@color/darkgreen"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                   android:layout_marginTop="@dimen/_5sdp"
+
+                    android:fontFamily="@font/iter_medium"
+                    android:text="Price List"/>
+
+                <TextView
+                    android:id="@+id/para_one_card_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Lorem ipsum dolor sit amet consectetur. \nFaucibus dolor ultricies eu enim. Tellus posuere \ndolor elementum cras arcu faucibus aliquet \nbibendum. Id at nisl eget sem et ultricies sit urna. \nVelit consectetur duis dui consectetur nibh \nlectus elit."
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_30sdp"/>
+                <GridLayout
+                    android:id="@+id/grid_two_abt_project_page_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/grid_one_abt_project_page">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_40sdp"
+                        android:fontFamily="@font/iter_medium"
+                        android:text="2BHK"
+                        android:textColor="@color/darkgreen"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:textSize="@dimen/_12ssp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkgreen"
+                        android:fontFamily="@font/iter_medium"
+                        android:textSize="@dimen/_12ssp"
+                        android:text="630 sq. ft."
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkgreen"
+                        android:fontFamily="@font/iter_medium"
+                        android:textSize="@dimen/_12ssp"
+                        android:text="₹ 30L"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        />
+                </GridLayout>
+                <GridLayout
+                    android:id="@+id/grid_one_abt_project_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/para_one_card_two">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/iter_medium"
+                        android:textSize="@dimen/_12ssp"
+                        android:text="Configurations"
+                        android:layout_marginRight="@dimen/_40sdp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/iter_medium"
+                        android:textSize="@dimen/_12ssp"
+                        android:text="Size"
+                        android:layout_marginRight="@dimen/_40sdp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/iter_medium"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:text="Price"
+                        />
+                </GridLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_three_abt_proj"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_below="@+id/card_two_abt_proj"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/white"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_20sdp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border">
+                <TextView
+                    android:id="@+id/how_is_heading_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:background="@color/white"
+                    android:textColor="@color/darkgreen"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/iter_medium"
+                    android:text=" How is the area for investment"/>
+
+                <TextView
+                    android:id="@+id/para_card_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Lorem ipsum dolor sit amet consectetur. \nFaucibus dolor ultricies eu enim. Tellus posuere \ndolor elementum cras arcu faucibus aliquet \nbibendum. Id at nisl eget sem et ultricies sit urna. \nVelit consectetur duis dui consectetur nibh \nlectus elit."
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_30sdp"/>
+
+
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

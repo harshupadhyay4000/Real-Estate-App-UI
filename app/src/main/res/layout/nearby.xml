@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_170sdp"
+    android:layout_height="@dimen/_70sdp"
+    android:backgroundTint="@color/white"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:background="@color/white"
+   >
+
+
+
+
+        <ImageView
+            android:id="@+id/places_image_nearby"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/hariyali_gardern"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pages.GalleryActivity"
+    android:background="@color/white">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/back_act_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/_20sdp"/>
+        <TextView
+            android:id="@+id/gallery_act_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gallery"
+            android:textColor="@color/black"
+            android:fontFamily="@font/iter_bold"
+            android:textSize="@dimen/_15ssp"
+            android:layout_toRightOf="@+id/back_act_gallery"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_20sdp"/>
+
+        <RelativeLayout
+            android:id="@+id/relativedetails_actgallery"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_below="@+id/gallery_act_heading"
+            android:layout_marginVertical="@dimen/_3ssp"
+            android:layout_height="wrap_content">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayoutdetails_actgallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15ssp"
+                app:tabGravity="fill"
+                app:tabMode="scrollable"
+                app:tabIndicatorColor="@color/darkgreen"
+                android:background="@drawable/tab"
+                android:backgroundTint="@color/white"
+                android:layout_centerInParent="true"
+                app:tabSelectedTextColor="@color/darkgreen"
+                app:tabTextColor="@color/black"/>
+        </RelativeLayout>
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerdetails_actgallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/relativedetails_actgallery"
+            android:layout_marginTop="0dp"/>
+
+    </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+

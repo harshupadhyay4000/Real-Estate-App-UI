@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Pages.Trending_Page">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/back_btn_trending_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn"
+            android:background="@drawable/button_background"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/trending_heading_trending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trending In Ahmedabad"
+            android:textColor="@color/black"
+            android:fontFamily="@font/iter_bold"
+            android:textSize="@dimen/_15ssp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_12sdp"/>
+
+        <ImageButton
+            android:id="@+id/filter_btn_trendingp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/filter_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"/>
+        <TextView
+            android:id="@+id/showingresults_text_trending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Showing results to"
+            android:textColor="@color/black"
+            android:fontFamily="@font/iter_medium"
+            android:textSize="@dimen/_10ssp"
+            android:layout_below="@+id/back_btn_trending_page"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            />
+        <ImageButton
+            android:id="@+id/buy_btn_trending_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buy_btn"
+            android:layout_toRightOf="@+id/showingresults_text_trending"
+            android:layout_below="@+id/trending_heading_trending"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_5sdp"/>
+        <ImageButton
+            android:id="@+id/all_btn_trending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/all_btn"
+            android:layout_below="@+id/showingresults_text_trending"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+        <ImageButton
+            android:id="@+id/flats_btn_trending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flats_btn"
+            android:background="@drawable/button_background"
+            android:layout_toRightOf="@+id/all_btn_trending"
+            android:layout_below="@+id/buy_btn_trending_page"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"/>
+        <ImageButton
+            android:id="@+id/farmhouse_btn_trending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/farmhouses_btn"
+            android:background="@drawable/button_background"
+            android:layout_below="@+id/buy_btn_trending_page"
+            android:layout_toRightOf="@+id/flats_btn_trending"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+           />
+        <ImageButton
+            android:id="@+id/bungalows_btn_trending_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bungalows_btn"
+            android:background="@drawable/button_background"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/all_btn_trending"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <ImageButton
+            android:id="@+id/duplex_btn_trending_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/duplex_btn"
+            android:background="@drawable/button_background"
+            android:layout_below="@+id/flats_btn_trending"
+            android:layout_toRightOf="@+id/bungalows_btn_trending_page"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_trending_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bungalows_btn_trending_page"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
